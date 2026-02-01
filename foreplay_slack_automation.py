@@ -25,7 +25,6 @@ TRACKED_BRANDS = [
     'Dossier',
     'Eadem',
     'fatty15',
-    'Getsunflow',
     'hims',
     'ILIA Beauty',
     'IM8',
@@ -46,7 +45,6 @@ TRACKED_BRANDS = [
     'Seed',
     'Shibumi Shade',
     'SKIMS',
-    'Sonsie Skin',
     'True Classic',
     'YETI'
 ]
