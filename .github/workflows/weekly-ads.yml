@@ -1,7 +1,7 @@
 name: Weekly Ad Update
 
 on:
-  # Run every Monday at 9 AM UTC
+  # Run every Monday at 7 AM ET (12 PM UTC)
   schedule:
     - cron: '0 12 * * 1'
   # Allow manual triggering
