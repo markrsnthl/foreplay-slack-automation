@@ -1,0 +1,41 @@
+name: Weekly Ad Update
+
+on:
+  # Run every Monday at 9 AM UTC
+  schedule:
+    - cron: '0 9 * * 1'
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  post-ads-to-slack:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Foreplay to Slack automation
+        env:
+          FOREPLAY_API_KEY: ${{ secrets.FOREPLAY_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python foreplay_slack_automation.py
+
+      - name: Commit deduplication file
+        if: success()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add posted_ads.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update posted ads tracking [skip ci]"
+          git push

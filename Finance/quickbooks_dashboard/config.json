@@ -1,0 +1,7 @@
+{
+  "client_id": "ABlYN8hF9GrWrTLz7vLohDFt5uwGqVx6gfxEUrnkv7MgtEZSSa",
+  "client_secret": "Dq2mhR4vBeOF6IV2A3ndSM7c89x3hrYT4sjNnrAS",
+  "redirect_uri": "http://localhost:8000/callback",
+  "company_id": "",
+  "environment": "production"
+}

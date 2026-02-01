@@ -1,0 +1,42 @@
+╔════════════════════════════════════════════════════════════╗
+║     CALIBRATION WEIGHT REFERENCE - KEEP THIS HANDY!        ║
+╠════════════════════════════════════════════════════════════╣
+║                                                            ║
+║  US COINS (Best for calibration)                           ║
+║  ────────────────────────────────                          ║
+║  🪙 Nickel        = 5.00g    ⭐ RECOMMENDED                ║
+║  🪙 Penny         = 2.50g    (post-1982)                   ║
+║  🪙 Quarter       = 5.67g                                  ║
+║  🪙 Dime          = 2.27g                                  ║
+║                                                            ║
+║  MULTIPLE COINS                                            ║
+║  ────────────────────────────────                          ║
+║  🪙🪙 2 Nickels   = 10.0g                                  ║
+║  🪙🪙🪙 3 Nickels = 15.0g                                  ║
+║  🪙🪙 2 Quarters  = 11.3g                                  ║
+║                                                            ║
+║  OTHER COMMON ITEMS                                        ║
+║  ────────────────────────────────                          ║
+║  📎 Paperclip     = ~1.0g    (standard size)               ║
+║  💵 Dollar bill   = ~1.0g                                  ║
+║  🔋 AAA battery   = ~11.5g                                 ║
+║  🔋 AA battery    = ~23g                                   ║
+║  📦 Sugar packet  = ~4.0g                                  ║
+║  💊 Aspirin       = ~0.5g    (single tablet)               ║
+║                                                            ║
+║  PRO TIPS                                                  ║
+║  ────────────────────────────────                          ║
+║  • Use nickels - they're perfect for the 0-50g range       ║
+║  • Stack coins for heavier calibration points              ║
+║  • Weigh your calibration object first if possible         ║
+║  • Re-calibrate if you move to different location          ║
+║                                                            ║
+╚════════════════════════════════════════════════════════════╝
+
+QUICK START CHECKLIST:
+□ 1. Run: python3 trackpad_scale.py
+□ 2. Click TARE with clean, empty trackpad
+□ 3. Click CALIBRATE, enter weight (e.g., "5" for nickel)
+□ 4. Place nickel on trackpad and press gently around it
+□ 5. Click FINISH CALIBRATION
+□ 6. Start measuring!

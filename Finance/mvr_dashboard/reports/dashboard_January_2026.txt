@@ -1,0 +1,43 @@
+
+============================================================
+  MVR DIGITAL FINANCIAL DASHBOARD
+  January 2026
+============================================================
+
+📊 FINANCIAL SUMMARY
+---------------------------------------------
+  Revenue:              $      99,289
+  Expenses:             $      83,170
+  Net Operating Income: $      16,119
+  Operating Margin:             16.2%
+
+🎯 VS TARGETS
+---------------------------------------------
+  Revenue ($150K):      Gap: $50,711
+  Margin (35%):         Current: 16.2%
+
+👥 HIRING TRIGGERS
+---------------------------------------------
+  Account Manager ($110K):  Not yet
+  Project Manager ($120K):  Not yet
+
+💰 TOP EXPENSES
+---------------------------------------------
+  Contract labor               $    46,098
+  Salaries & Wages             $    15,520
+  Bad Debts                    $     8,015
+  Apps/software/web services   $     3,778
+  Insurance                    $     2,392
+  Employer Taxes               $     1,129
+  Employee Benefits            $     1,111
+  recruitment expense          $     1,000
+
+📋 CONTRACT LABOR CHECK
+---------------------------------------------
+  Contract Labor:       $      46,098
+  % of Revenue:                 46.4%
+  Status:               ⚠️  HIGH (target <25%)
+
+============================================================
+  Generated: 2026-01-30 16:17
+============================================================

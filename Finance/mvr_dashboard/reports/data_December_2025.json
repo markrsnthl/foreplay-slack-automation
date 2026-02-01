@@ -1,0 +1,21 @@
+{
+  "generated": "2026-01-30T23:11:34.413207",
+  "month": "December 2025",
+  "revenue": 109656.2,
+  "expenses": 99934.7,
+  "net_income": 9721.5,
+  "margin": 8.865435789312414,
+  "expense_breakdown": {
+    "Consulting & Accounting": 10728.0,
+    "Contract labor": 33958.28,
+    "Employee Benefits": 1111.31,
+    "Insurance": 1523.33,
+    "Total for Insurance": 1570.11,
+    "Apps/software/web services": 3266.47,
+    "Salaries & Wages": 38027.53,
+    "Travel expenses": 357.44
+  },
+  "ytd_revenue": 1176208.94,
+  "ytd_expenses": 917976.5700000001,
+  "ytd_net_income": 258232.36999999988
+}
