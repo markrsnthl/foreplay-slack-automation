@@ -52,6 +52,24 @@ DAYS_LOOKBACK = 7
 POSTED_ADS_FILE = Path(__file__).parent / 'posted_ads.json'
 API_FETCH_LIMIT = 10  # Fetch 10 to ensure we find ads with visuals (skip DCO/text-only)
 
+# Weekly inspirational messages to energize designers
+INSPO_MESSAGES = [
+    "Your mood board is crying. Fix it with this week's inspo 💅",
+    "Imagine launching something mid. Couldn't be you after this 🎯",
+    "Weekly creative fuel incoming. You're about to be unstoppable 🎨",
+    "This week's ads hit different. In the best way 💎",
+    "Plot twist: Your next breakthrough idea is probably in here ✨",
+    "The good stuff just landed. Time to raise your own bar 🔥",
+    "The brands that get it just dropped gold. Let's study 📚",
+    "Your brain is about to be very happy with what's coming 💅",
+    "Fresh creative just dropped. Consider yourself ahead of the curve 👀",
+    "New week, new level unlocked. Ready when you are ⚡",
+    "Monday energy: Let's make something people actually want to see 💫",
+    "This week's lineup is chef's kiss. Dig in 👩‍🍳",
+    "Consider this your secret weapon for the week ahead 🗡️",
+    "The algorithm gods have blessed us. Don't waste it 🙏",
+    "Warning: These ads might make you rethink everything. Proceed ✨"
+]
 
 class DeduplicationStore:
     def __init__(self, filepath: Path):
@@ -166,8 +184,13 @@ class SlackPoster:
 
     def post_weekly_inspiration(self, ads_by_brand: Dict[str, List[Dict]]):
         """Simple format: Brand + visuals + copy sample"""
+        # Pick a random inspirational message
+        inspo_message = random.choice(INSPO_MESSAGES)
+
         blocks = [
-            {"type": "header", "text": {"type": "plain_text", "text": "📊 Creative Inspo of the Week"}},
+            {"type": "header", "text": {"type": "plain_text", "text": "✨ Creative Inspo of the Week"}},
+            {"type": "section", "text": {"type": "mrkdwn", "text": f"_{inspo_message}_"}},
+            {"type": "divider"}
         ]
 
         for brand, ads in sorted(ads_by_brand.items()):
